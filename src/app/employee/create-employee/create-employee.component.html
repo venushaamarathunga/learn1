@@ -1,0 +1,22 @@
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="exampleInputFullName">Full Name</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="fullName"
+      id="exampleInputFullName"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="exampleInputEmail"
+      aria-describedby="emailHelp"
+      formControlName="email"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
